@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+      integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row page">
+        <div class="background-img col-4">
+          <div class="logo">Glamera</div>
+          <h4>Few clicks away from creating your business</h4>
+          <p>Start your business in minutes</p>
+        </div>
+        <div class="col-1"></div>
+        <div class="form col-7">
+          <div class="row">
+            <h5>Choose the type of business</h5>
+            <p>To get start tell us what type of Business you are going toincorporate and name</p>
+            <form>
+              <label class="form-label" for="business-type">Business type</label>
+              <input type="text" class="form-control" />
+              <br />
+                <!-- ||||||||||||||||||||||||||||||||||||||||||||||||| -->
+              <!-- <section> -->
+                      <div class="checks m-2 p-2">
+                        <input type="checkbox" name="types" id="salon" class="form-control">
+                        <label class="m-2" for="salon">
+                          <i class="fa-solid fa-scissors"></i>
+                          salon
+                        </label>
+                        <input type="checkbox" name="types" id="gym" class="form-control">
+                        <label for="gym" class="m-2">
+                          <i class="image fa-solid fa-dumbbell"></i>
+                          Gym
+                        </label>
+                        <input type="checkbox" name="types" id="spa" class="form-control">
+                        <label for="spa" class="m-2">
+                          <i class="fa-solid fa-spa"></i>
+                          Spa
+                        </label>
+                        <input type="checkbox" name="types" id="clinic" class="form-control">
+                        <label for="clinic" class="m-2">
+                          <i class="fa-solid fa-house-chimney-medical"></i>                          
+                          Clinic
+                        </label>
+                      </div>
+                    <!-- </section> -->
+                <!-- ||||||||||||||||||||||||||||||||||||||||||||||||| -->
+              <div class="dropdowns mb-3 pb-3">
+                <div class="dropdown1 col-6 m-2">
+                  <label class="form-label" for="Governorate">Governorate</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example">
+                    <option selected>Select Governorate</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  </div>
+                  <div class="dropdown2 col-6 m-2">
+                    <label class="form-label" for="district">District</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example">
+                      <option selected>Select District</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- ||||||||||||||||||||||||||||||||||||||||||||||||| -->
+                <div class="dropdown-Radio">
+                  <div class="dropdown3 col-6 m-2">
+                    <label class="form-label" for="district">How did you know us</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example">
+                      <option selected>Select District</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  
+                  <div class="radio col-6 m-2">
+                    <label for="radio">Are you currently using system?</label>
+                    <div class="options">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">No</label>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn1">
+                <button class="create-btn">Create account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

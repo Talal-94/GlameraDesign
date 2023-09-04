@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root {
+    --form-control-color: rgba(99,92,169,255);
+  }
+  
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.page {
+    height: 100vh;
+    font-family: "Poppins";
+}
+
+.background-img {
+    background-image: url(/wolfgang-hasselmann-thLkcLo5ocE.jpg);
+    color: white;
+    text-align: start;
+}
+
+.background-img .logo {
+    padding: 4rem;
+}
+
+.background-img h4 {
+    padding-inline: 4rem;
+    margin-top: 2rem;
+}
+
+.background-img p {
+    padding-inline: 4rem;
+}
+
+.form {
+    text-align: start;
+    padding: 2rem;
+}
+
+.form p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* .form input {
+    width: 70%;
+} */
+/* 
+.boxes {
+    position: relative;
+} */
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 3rem;
+    height: 2.5rem;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    position: relative;
+  }
+  input[type="checkbox"] {
+    /* ...existing styles */
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: scale(0);
+    transition: 100ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    transform-origin: center;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  .form-control {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+  }
+
+  input[type="checkbox"]:hover {
+    outline: max(2px, 0.15em) solid var(--form-control-color);
+    outline-offset: max(2px, 0.15em);
+  }
+    
+.checks {
+    display: flex;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    gap: 3.5rem;
+    margin: 1rem;
+}
+
+  /* section {
+    display: flex;
+  }
+  .checks {
+  }
+  .checkbox-label{
+    position: absolute;
+    left: 48px;
+    top: 19px;
+  }
+  .image{
+    position: absolute;
+   width: 50px;
+   height: 50px;
+   left: 30px;
+   top: 50px;
+  } */
+
+.dropdowns {
+    display: flex;
+}
+
+.dropdown-Radio {
+    display: flex;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.create-btn {
+    border: none;
+    padding-inline: 1.2rem;
+    padding-block: .7rem;
+    background-color: rgba(99,92,169,255);
+    color: white;
+}
+
+input[type="radio"] {
+    display: grid;
+    place-content: center;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  }
+
+
+  
+  input[type="radio"] {
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
